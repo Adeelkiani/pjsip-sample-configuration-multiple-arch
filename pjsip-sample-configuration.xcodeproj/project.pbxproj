@@ -35,7 +35,7 @@
 		318763BB2666326000BCC446 /* libopenh264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 318763BA2666325F00BCC446 /* libopenh264.a */; };
 		318763C8266645C200BCC446 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 318763C6266645C100BCC446 /* libssl.a */; };
 		318763C9266645C200BCC446 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 318763C7266645C200BCC446 /* libcrypto.a */; };
-		318763DB2666577700BCC446 /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 318763DA2666577700BCC446 /* libopus.a */; };
+		318763E926665F8000BCC446 /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 318763E826665F8000BCC446 /* libopus.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -2843,7 +2843,7 @@
 		318763BA2666325F00BCC446 /* libopenh264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopenh264.a; sourceTree = "<group>"; };
 		318763C6266645C100BCC446 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
 		318763C7266645C200BCC446 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
-		318763DA2666577700BCC446 /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus.a; sourceTree = "<group>"; };
+		318763E826665F8000BCC446 /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus.a; sourceTree = "<group>"; };
 		31D0A99126651A9A008AB3CD /* pjsip-sample-configuration-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pjsip-sample-configuration-Bridging-Header.h"; sourceTree = "<group>"; };
 		31D0A99226651A9A008AB3CD /* pjsip.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pjsip.m; sourceTree = "<group>"; };
 		3D61B09CEC214CF50B5FEEF9 /* Pods_pjsip_sample_configuration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pjsip_sample_configuration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2870,7 +2870,7 @@
 				318763AE2666067100BCC446 /* libspeex.a in Frameworks */,
 				318763A32666067100BCC446 /* libpjmedia-codec.a in Frameworks */,
 				318763A42666067100BCC446 /* libpjmedia-videdev.a in Frameworks */,
-				318763DB2666577700BCC446 /* libopus.a in Frameworks */,
+				318763E926665F8000BCC446 /* libopus.a in Frameworks */,
 				318763AB2666067100BCC446 /* libpjsua.a in Frameworks */,
 				318763B02666067100BCC446 /* libwebrtc.a in Frameworks */,
 				318763AD2666067100BCC446 /* libresample.a in Frameworks */,
@@ -7885,7 +7885,7 @@
 		31D0A31126651959008AB3CD /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				318763DA2666577700BCC446 /* libopus.a */,
+				318763E826665F8000BCC446 /* libopus.a */,
 				318763C7266645C200BCC446 /* libcrypto.a */,
 				318763C6266645C100BCC446 /* libssl.a */,
 				318763BA2666325F00BCC446 /* libopenh264.a */,
