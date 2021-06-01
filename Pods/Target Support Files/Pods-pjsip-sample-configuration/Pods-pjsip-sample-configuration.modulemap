@@ -1,0 +1,6 @@
+framework module Pods_pjsip_sample_configuration {
+  umbrella header "Pods-pjsip-sample-configuration-umbrella.h"
+
+  export *
+  module * { export * }
+}
