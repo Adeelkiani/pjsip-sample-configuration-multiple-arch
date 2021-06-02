@@ -52,10 +52,10 @@ d) Configure OpenH264
     2) Install nasm  (brew install nasm)
     3) Execute command to generate openh264.a file
            
-            i.  make OS=ios ARCH=arm64 SDK_MIN=10
-            ii. make OS=ios ARCH=other architectures( armv7,armv7s,x86_64,i386 ) SDK_MIN=10
-            iii. lipo -arch arm64 libopenh264-arm64.a -arch x86_64 libopenh264-x86_64.a -create -output libopenh264.a
-            iv.Add generated file to xcode project lib
+            i.   make OS=ios ARCH=arm64 SDK_MIN=10
+            ii.  make OS=ios ARCH=other architectures( armv7,armv7s,x86_64,i386 ) SDK_MIN=10
+            iii. lipo -arch arm64 libopenh264-arm64.a -arch x86_64 libopenh264-x86_64.a -create       -output libopenh264.a
+            iv.  Add generated file to xcode project lib
 
 e) Configure Opus
     
