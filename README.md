@@ -1,5 +1,5 @@
 # pjsip-multiple-architectures-configuration
- Multiple architecture configuration for iphone and simulator 
+This project is built for arm64 and x86_64 architecture.
 
 # Clone PJSIP project
     Documentation : 
@@ -43,7 +43,7 @@ c) Combining IPhone and Simulator configuration.
    
     NOTE: To compile for multiple architectures you need to run lipo for all 6 modules i.e pjlib,pjsip,pjlib-util,pjmedia,pjnath,third_party and pjmedia. Once all .a files are generated copy them in lib folder then import it into project.
 
-d) Configure OpenH264
+d) To configure Video support using OpenH264
     
     1) Download openH264 1.0.0
      
@@ -55,9 +55,9 @@ d) Configure OpenH264
             i.   make OS=ios ARCH=arm64 SDK_MIN=10
             ii.  make OS=ios ARCH=other architectures( armv7,armv7s,x86_64,i386 ) SDK_MIN=10
             iii. lipo -arch arm64 libopenh264-arm64.a -arch x86_64 libopenh264-x86_64.a -create       -output libopenh264.a
-            iv.  Add generated file to xcode project lib
+            iv.  Add generated file from openH264 directory to xcode project lib
 
-e) Configure Opus
+e) Configure Opus ( Audio Codec )
     
     1) Download source code (opus-1.1.2 ) 
        
@@ -91,6 +91,7 @@ e) Configure Opus
         v) Combine using lipo
         
             lipo -arch arm64 libopus-arm64.a -arch i386 libopus-i386.a -arch x86_64 libopus-x86_64.a -create -output libopus.a
+        vi) Copy generated file from /usr/local/lib (if you have changed destination copy from there)
 
 f)  Configure OpenSSL
 
@@ -102,7 +103,7 @@ f)  Configure OpenSSL
     
         ./build-libssl.sh 
 
-    3. Copy libssl.a and libcrypto.a to project directory where all libraries are added).
+    3. Copy libssl.a and libcrypto.a from OpenSSL-for-iPhone to project directory where all libraries are added).
 
 g) Adding required libraries, frameworks and pjsip classes
 
@@ -139,9 +140,12 @@ h) Configuring search paths
 i) Adding Bridging file
 
     Add following lines in bridging file
-    
+
         #define PJ_AUTOCONF 1
         #import "pjsua.h"
 
 
-NOTE: Possible scenario for .h file not found: Check into imported directory of pjsip files that actual directory contains all files and folder ( not xcode project directory ).
+NOTE: 
+
+    1. Possible scenario for .h file not found
+        Check into imported directory of pjsip files that actual directory contains all files and folder ( not xcode project directory ).
