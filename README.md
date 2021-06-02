@@ -129,12 +129,12 @@ h) Configuring search paths
 
     ii.Library search path 
         i)    $(PROJECT_DIR)/lib
-        ii)   $(PROJECT_DIR)/pjsip/pjmedia/include
-        iii)  $(PROJECT_DIR)/pjsip/pjnath/include
-        iv)   $(PROJECT_DIR)/pjsip/pjlib/include
-        v)    $(PROJECT_DIR)/pjsip/pjsip/include
-        vi)   $(PROJECT_DIR)/pjsip/third_party/include
-        vii)  $(PROJECT_DIR)/pjsip/pjlib-util/include
+        ii)   $(PROJECT_DIR)/pjsip/pjmedia/lib
+        iii)  $(PROJECT_DIR)/pjsip/pjnath/lib
+        iv)   $(PROJECT_DIR)/pjsip/pjlib/lib
+        v)    $(PROJECT_DIR)/pjsip/pjsip/lib
+        vi)   $(PROJECT_DIR)/pjsip/third_party/lib
+        vii)  $(PROJECT_DIR)/pjsip/pjlib-util/lib
 
 i) Adding Bridging file
 
