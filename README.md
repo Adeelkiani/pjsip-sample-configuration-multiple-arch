@@ -43,7 +43,7 @@ c) Combining IPhone and Simulator configuration.
    
     NOTE: To compile for multiple architectures you need to run lipo for all 6 modules i.e pjlib,pjsip,pjlib-util,pjmedia,pjnath,third_party and pjmedia. Once all .a files are generated copy them in lib folder then import it into project.
 
-d) Configure Video support using OpenH264
+d) Configure OpenH264
     
     1) Download openH264 1.0.0
      
@@ -92,7 +92,7 @@ e) Configure Opus
         
             lipo -arch arm64 libopus-arm64.a -arch i386 libopus-i386.a -arch x86_64 libopus-x86_64.a -create -output libopus.a
 
-f)  Configuring OpenSSL
+f)  Configure OpenSSL
 
     1. Download project from this link 
     
