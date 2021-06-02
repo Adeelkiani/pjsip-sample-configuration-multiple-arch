@@ -23,7 +23,7 @@ a) Multiple architectures for iphone (armv7, armv7s, arm64, x86_64, i386 and so 
 
 b) Simulator configuration
 
-    export DEVPATH=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.p    latform/Developer
+    export DEVPATH=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer
 
     # 64-bit simulator
         ARCH="-arch x86_64" CFLAGS="-O2 -m64 -mios-simulator-version-min=5.0" LDFLAGS="-O2 -m64 -mios-simulator-version-min=5.0" ./configure-iphone
