@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		313765442696D958000D7B7C /* SIPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 313765422696D958000D7B7C /* SIPClient.m */; };
+		313765472696E09A000D7B7C /* AccountConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313765462696E09A000D7B7C /* AccountConfiguration.swift */; };
+		3137654B2696E8E3000D7B7C /* ToneGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3137654A2696E8E3000D7B7C /* ToneGenerator.swift */; };
+		3137654E2696EAA9000D7B7C /* iphoneTone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3137654D2696EAA9000D7B7C /* iphoneTone.mp3 */; };
+		31376551269700A5000D7B7C /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31376550269700A5000D7B7C /* HapticManager.swift */; };
 		31874EDE2666048500BCC446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3138AE84265FCF2400B44C63 /* Main.storyboard */; };
 		31874EDF2666048500BCC446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3138AE87265FCF2500B44C63 /* Assets.xcassets */; };
 		3187639A2666065800BCC446 /* pjsip.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D0A99226651A9A008AB3CD /* pjsip.m */; };
@@ -39,6 +44,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		313765422696D958000D7B7C /* SIPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIPClient.m; sourceTree = "<group>"; };
+		313765432696D958000D7B7C /* SIPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIPClient.h; sourceTree = "<group>"; };
+		313765462696E09A000D7B7C /* AccountConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountConfiguration.swift; sourceTree = "<group>"; };
+		3137654A2696E8E3000D7B7C /* ToneGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneGenerator.swift; sourceTree = "<group>"; };
+		3137654D2696EAA9000D7B7C /* iphoneTone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = iphoneTone.mp3; sourceTree = "<group>"; };
+		31376550269700A5000D7B7C /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		3138AE7B265FCF2400B44C63 /* pjsip-sample-configuration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pjsip-sample-configuration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3138AE7E265FCF2400B44C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3138AE82265FCF2400B44C63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,8 +57,6 @@
 		3138AE87265FCF2500B44C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3138AE8A265FCF2500B44C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3138AE8C265FCF2500B44C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		316629BB26612F81009EC7E7 /* SIPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIPClient.h; sourceTree = "<group>"; };
-		316629BC26612F81009EC7E7 /* SIPClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIPClient.m; sourceTree = "<group>"; };
 		3179E7F526610F22005F835A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		3179E7F726610F3D005F835A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		3179E7F826610F3D005F835A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -2886,9 +2895,86 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3137653D2696D84B000D7B7C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3138AE82265FCF2400B44C63 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3137653E2696D856000D7B7C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3138AE84265FCF2400B44C63 /* Main.storyboard */,
+				3138AE89265FCF2500B44C63 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3137653F2696D865000D7B7C /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				3138AE7E265FCF2400B44C63 /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		313765412696D939000D7B7C /* pjsip-objc */ = {
+			isa = PBXGroup;
+			children = (
+				313765432696D958000D7B7C /* SIPClient.h */,
+				313765422696D958000D7B7C /* SIPClient.m */,
+			);
+			path = "pjsip-objc";
+			sourceTree = "<group>";
+		};
+		313765452696E032000D7B7C /* SwiftWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				313765462696E09A000D7B7C /* AccountConfiguration.swift */,
+			);
+			path = SwiftWrappers;
+			sourceTree = "<group>";
+		};
+		313765482696E89C000D7B7C /* PJSIP */ = {
+			isa = PBXGroup;
+			children = (
+				313765492696E8AD000D7B7C /* Utils */,
+				313765452696E032000D7B7C /* SwiftWrappers */,
+			);
+			path = PJSIP;
+			sourceTree = "<group>";
+		};
+		313765492696E8AD000D7B7C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3137654F26970097000D7B7C /* Haptics */,
+				3137654A2696E8E3000D7B7C /* ToneGenerator.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3137654C2696EA98000D7B7C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3137654D2696EAA9000D7B7C /* iphoneTone.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3137654F26970097000D7B7C /* Haptics */ = {
+			isa = PBXGroup;
+			children = (
+				31376550269700A5000D7B7C /* HapticManager.swift */,
+			);
+			path = Haptics;
+			sourceTree = "<group>";
+		};
 		3138AE72265FCF2400B44C63 = {
 			isa = PBXGroup;
 			children = (
+				3137654C2696EA98000D7B7C /* Resources */,
 				31D0A31126651959008AB3CD /* libs */,
 				31D099CA26651954008AB3CD /* pjsip */,
 				3138AE7D265FCF2400B44C63 /* pjsip-sample-configuration */,
@@ -2909,15 +2995,13 @@
 		3138AE7D265FCF2400B44C63 /* pjsip-sample-configuration */ = {
 			isa = PBXGroup;
 			children = (
-				31D0A99026651A7B008AB3CD /* bridge */,
-				3138AE7E265FCF2400B44C63 /* AppDelegate.swift */,
-				3138AE82265FCF2400B44C63 /* ViewController.swift */,
-				3138AE84265FCF2400B44C63 /* Main.storyboard */,
+				313765482696E89C000D7B7C /* PJSIP */,
+				3137653F2696D865000D7B7C /* Delegates */,
+				3137653E2696D856000D7B7C /* Storyboard */,
+				3137653D2696D84B000D7B7C /* ViewController */,
+				31D0A99026651A7B008AB3CD /* Bridging */,
 				3138AE87265FCF2500B44C63 /* Assets.xcassets */,
-				3138AE89265FCF2500B44C63 /* LaunchScreen.storyboard */,
 				3138AE8C265FCF2500B44C63 /* Info.plist */,
-				316629BB26612F81009EC7E7 /* SIPClient.h */,
-				316629BC26612F81009EC7E7 /* SIPClient.m */,
 			);
 			path = "pjsip-sample-configuration";
 			sourceTree = "<group>";
@@ -7914,13 +7998,14 @@
 			path = libs;
 			sourceTree = "<group>";
 		};
-		31D0A99026651A7B008AB3CD /* bridge */ = {
+		31D0A99026651A7B008AB3CD /* Bridging */ = {
 			isa = PBXGroup;
 			children = (
+				313765412696D939000D7B7C /* pjsip-objc */,
 				31D0A99226651A9A008AB3CD /* pjsip.m */,
 				31D0A99126651A9A008AB3CD /* pjsip-sample-configuration-Bridging-Header.h */,
 			);
-			path = bridge;
+			path = Bridging;
 			sourceTree = "<group>";
 		};
 		908E089611134CF6F53E3192 /* Pods */ = {
@@ -7993,6 +8078,7 @@
 			files = (
 				31874EDE2666048500BCC446 /* Main.storyboard in Resources */,
 				31874EDF2666048500BCC446 /* Assets.xcassets in Resources */,
+				3137654E2696EAA9000D7B7C /* iphoneTone.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -8028,8 +8114,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				313765472696E09A000D7B7C /* AccountConfiguration.swift in Sources */,
 				3187639A2666065800BCC446 /* pjsip.m in Sources */,
+				31376551269700A5000D7B7C /* HapticManager.swift in Sources */,
+				313765442696D958000D7B7C /* SIPClient.m in Sources */,
 				3187639B2666065800BCC446 /* AppDelegate.swift in Sources */,
+				3137654B2696E8E3000D7B7C /* ToneGenerator.swift in Sources */,
 				3187639C2666065800BCC446 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -8180,7 +8270,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H6J3P2RAG5;
+				DEVELOPMENT_TEAM = 9C5A5WXN24;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"PJ_AUTOCONF=1",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/pjsip/pjmedia/include",
 					"$(PROJECT_DIR)/pjsip/pjsip/include",
@@ -8207,7 +8302,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.now.software.pjsip-sample-configuration";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "pjsip-sample-configuration/bridge/pjsip-sample-configuration-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "pjsip-sample-configuration/Bridging/pjsip-sample-configuration-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
@@ -8223,7 +8318,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H6J3P2RAG5;
+				DEVELOPMENT_TEAM = 9C5A5WXN24;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/pjsip/pjmedia/include",
 					"$(PROJECT_DIR)/pjsip/pjsip/include",
@@ -8248,9 +8347,10 @@
 					"$(PROJECT_DIR)/pjsip/pjnath/lib",
 					"$(PROJECT_DIR)/libs",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.now.software.pjsip-sample-configuration";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "pjsip-sample-configuration/bridge/pjsip-sample-configuration-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "pjsip-sample-configuration/Bridging/pjsip-sample-configuration-Bridging-Header.h";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
